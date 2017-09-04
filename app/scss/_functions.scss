@@ -1,0 +1,21 @@
+@mixin color-yiq($background) {
+    $r: red($background);
+    $g: green($background);
+    $b: blue($background);
+    $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+    @if ($yiq >=150) {
+        color: #111;
+    }
+    @else {
+        color: #fff;
+    }
+}
+
+@function text-color ($background) {
+    @if (lightness($background) > 50) {
+        @return #111;
+    }
+    @else {
+        @return #fff;
+    }
+}

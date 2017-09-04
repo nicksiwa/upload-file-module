@@ -1,0 +1,33 @@
+.btn {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+
+    @each $color, $value in $theme-colors {
+        &.--#{$color} {
+            @include button-color($value);
+        }
+    }
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+
+    @each $color, $value in $theme-colors {
+        &.--#{$color} {
+            @include button-color-2($value);
+        }
+    }
+}

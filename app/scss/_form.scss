@@ -1,0 +1,36 @@
+  .container {
+    @include make-container();
+    line-height: 50px;
+  }
+
+  .row {
+    @include make-row();
+  }
+
+  .col-label {
+    @include make-col-ready();
+    @include media-breakpoint-up(md) {
+      @include make-col(1);
+    }
+    &::after {
+      content: ":"
+    }
+  }
+
+  .col-input {
+    @include make-col-ready();
+    @include media-breakpoint-up(md) {
+      @include make-col(2);
+    }
+    &.--full {
+      @include make-col(10);
+    }
+  }
+
+  input[type=text] {
+    width: 100%;
+  }
+
+  select {
+    width: 100%;
+  }

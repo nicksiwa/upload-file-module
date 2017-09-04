@@ -1,0 +1,17 @@
+@mixin button-color($background, $active-background: darken($background, 7.5%)) {
+    @include color-yiq($background);
+    background-color: $background;
+    &:hover {
+        @include color-yiq($background);
+        background-color: $active-background;
+    }
+}
+
+@mixin button-color-2($background, $active-background: darken($background, 7.5%)) {
+    color: text-color($background);
+    background-color: $background;
+    &:hover {
+        color: text-color($background);
+        background-color: $active-background;
+    }
+}
