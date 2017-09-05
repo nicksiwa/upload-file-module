@@ -1,4 +1,4 @@
-  .container {
+  /*.container {
     @include make-container();
     line-height: 50px;
   }
@@ -33,4 +33,107 @@
 
   select {
     width: 100%;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    &>* {
+      padding: 15px;
+      flex: 1 100%;
+    }
+  }
+
+  .content {
+    text-align: left;
+  }
+
+  .topnav {
+    background: black;
+    color: white;
+  }
+
+  .footer {
+    background: #aaa;
+    color: white;
+  }
+
+  .sidenav {
+    background: #eee;
+    &__link {
+      list-style-type: none;
+      padding: 0;
+    }
+    &__item {
+      &>a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media all and (min-width: 768px) {
+    .sidenav {
+      text-align: left;
+      flex: 1 auto;
+      order: 1;
+    }
+    .content {
+      flex: 5 0px;
+      order: 2;
+    }
+    .footer {
+      order: 3;
+    }
+  }
+
+
+  /*Properties for the Parent (flex container)*/
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    background-color: orange;
+  }
+
+  .container-shorthand {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+
+  /*Properties for the Children (flex items)*/
+
+  .item {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    background-color: white;
+    padding: 5px;
+    width: 200px;
+    line-height: 150px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .item-shorthand {
+    flex: 0 1 auto;
+  }
+
+  p {
+    color: red;
+    .test & {
+      color: orange;
+    }
+  }
+
+  $boolean: true;
+
+  .div {
+    @if ($boolean) {
+      border: 1px solid orange;
+    }
   }
