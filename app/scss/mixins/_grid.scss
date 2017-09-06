@@ -1,4 +1,4 @@
-@mixin make-container() {
+/*@mixin make-container() {
   margin-right: auto;
   margin-left: auto;
   padding-right: ($grid-gutter-width / 2);
@@ -33,4 +33,30 @@
 @mixin make-col($size, $columns: $grid-columns) {
   flex: 0 0 percentage($size / $columns);
   max-width: percentage($size / $columns);
+}*/
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+
+@each $key, $value in $grid-breakpoints {
+  @media only screen and (min-width: $value){
+    @for $i from 1 through $grid-columns {
+      .col-#{$key}-#{$i}{
+        width: 100% / $grid-columns * $i;
+      }
+    }
+  }
 }

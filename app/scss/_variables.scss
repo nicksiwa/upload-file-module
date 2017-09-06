@@ -1,3 +1,5 @@
+$font-family: 'Open Sans', sans-serif;
+
 $grid-columns: 12;
 $grid-gutter-width: 30px;
 $grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
@@ -65,5 +67,4 @@ $theme-colors: (
   dark: $gray-800
 ) !default;
 
-// Set a specific jump point for requesting color jumps
 $theme-color-interval: 8% !default;

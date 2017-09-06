@@ -1,3 +1,182 @@
+/*@mixin make-container() {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: ($grid-gutter-width / 2);
+  padding-left: ($grid-gutter-width / 2);
+  width: 100%;
+}
+
+@mixin make-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
+  @each $breakpoint,
+  $container-max-width in $max-widths {
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+      max-width: $container-max-width;
+    }
+  }
+}
+
+@mixin make-row() {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: ($grid-gutter-width / -2);
+  margin-left: ($grid-gutter-width / -2);
+}
+
+@mixin make-col-ready() {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: ($grid-gutter-width / 2);
+  padding-left: ($grid-gutter-width / 2);
+}
+
+@mixin make-col($size, $columns: $grid-columns) {
+  flex: 0 0 percentage($size / $columns);
+  max-width: percentage($size / $columns);
+}*/
+* {
+  box-sizing: border-box; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%; }
+
+@media only screen and (min-width: 0) {
+  .col-xs-1 {
+    width: 8.33333%; }
+  .col-xs-2 {
+    width: 16.66667%; }
+  .col-xs-3 {
+    width: 25%; }
+  .col-xs-4 {
+    width: 33.33333%; }
+  .col-xs-5 {
+    width: 41.66667%; }
+  .col-xs-6 {
+    width: 50%; }
+  .col-xs-7 {
+    width: 58.33333%; }
+  .col-xs-8 {
+    width: 66.66667%; }
+  .col-xs-9 {
+    width: 75%; }
+  .col-xs-10 {
+    width: 83.33333%; }
+  .col-xs-11 {
+    width: 91.66667%; }
+  .col-xs-12 {
+    width: 100%; } }
+
+@media only screen and (min-width: 576px) {
+  .col-sm-1 {
+    width: 8.33333%; }
+  .col-sm-2 {
+    width: 16.66667%; }
+  .col-sm-3 {
+    width: 25%; }
+  .col-sm-4 {
+    width: 33.33333%; }
+  .col-sm-5 {
+    width: 41.66667%; }
+  .col-sm-6 {
+    width: 50%; }
+  .col-sm-7 {
+    width: 58.33333%; }
+  .col-sm-8 {
+    width: 66.66667%; }
+  .col-sm-9 {
+    width: 75%; }
+  .col-sm-10 {
+    width: 83.33333%; }
+  .col-sm-11 {
+    width: 91.66667%; }
+  .col-sm-12 {
+    width: 100%; } }
+
+@media only screen and (min-width: 768px) {
+  .col-md-1 {
+    width: 8.33333%; }
+  .col-md-2 {
+    width: 16.66667%; }
+  .col-md-3 {
+    width: 25%; }
+  .col-md-4 {
+    width: 33.33333%; }
+  .col-md-5 {
+    width: 41.66667%; }
+  .col-md-6 {
+    width: 50%; }
+  .col-md-7 {
+    width: 58.33333%; }
+  .col-md-8 {
+    width: 66.66667%; }
+  .col-md-9 {
+    width: 75%; }
+  .col-md-10 {
+    width: 83.33333%; }
+  .col-md-11 {
+    width: 91.66667%; }
+  .col-md-12 {
+    width: 100%; } }
+
+@media only screen and (min-width: 992px) {
+  .col-lg-1 {
+    width: 8.33333%; }
+  .col-lg-2 {
+    width: 16.66667%; }
+  .col-lg-3 {
+    width: 25%; }
+  .col-lg-4 {
+    width: 33.33333%; }
+  .col-lg-5 {
+    width: 41.66667%; }
+  .col-lg-6 {
+    width: 50%; }
+  .col-lg-7 {
+    width: 58.33333%; }
+  .col-lg-8 {
+    width: 66.66667%; }
+  .col-lg-9 {
+    width: 75%; }
+  .col-lg-10 {
+    width: 83.33333%; }
+  .col-lg-11 {
+    width: 91.66667%; }
+  .col-lg-12 {
+    width: 100%; } }
+
+@media only screen and (min-width: 1200px) {
+  .col-xl-1 {
+    width: 8.33333%; }
+  .col-xl-2 {
+    width: 16.66667%; }
+  .col-xl-3 {
+    width: 25%; }
+  .col-xl-4 {
+    width: 33.33333%; }
+  .col-xl-5 {
+    width: 41.66667%; }
+  .col-xl-6 {
+    width: 50%; }
+  .col-xl-7 {
+    width: 58.33333%; }
+  .col-xl-8 {
+    width: 66.66667%; }
+  .col-xl-9 {
+    width: 75%; }
+  .col-xl-10 {
+    width: 83.33333%; }
+  .col-xl-11 {
+    width: 91.66667%; }
+  .col-xl-12 {
+    width: 100%; } }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -20,6 +199,7 @@ html {
    * Remove the margin in all browsers (opinionated).
    */
 body {
+  font-family: "Open Sans", sans-serif;
   margin: 0; }
 
 /**
@@ -389,131 +569,14 @@ template {
 [hidden] {
   display: none; }
 
-/*.container {
-    @include make-container();
-    line-height: 50px;
-  }
+input[type=text] {
+  width: 100%; }
 
-  .row {
-    @include make-row();
-  }
+select {
+  width: 100%; }
 
-  .col-label {
-    @include make-col-ready();
-    @include media-breakpoint-up(md) {
-      @include make-col(1);
-    }
-    &::after {
-      content: ":"
-    }
-  }
-
-  .col-input {
-    @include make-col-ready();
-    @include media-breakpoint-up(md) {
-      @include make-col(2);
-    }
-    &.--full {
-      @include make-col(10);
-    }
-  }
-
-  input[type=text] {
-    width: 100%;
-  }
-
-  select {
-    width: 100%;
-  }
-
-  .flex-container {
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-    &>* {
-      padding: 15px;
-      flex: 1 100%;
-    }
-  }
-
-  .content {
-    text-align: left;
-  }
-
-  .topnav {
-    background: black;
-    color: white;
-  }
-
-  .footer {
-    background: #aaa;
-    color: white;
-  }
-
-  .sidenav {
-    background: #eee;
-    &__link {
-      list-style-type: none;
-      padding: 0;
-    }
-    &__item {
-      &>a {
-        text-decoration: none;
-      }
-    }
-  }
-
-  @media all and (min-width: 768px) {
-    .sidenav {
-      text-align: left;
-      flex: 1 auto;
-      order: 1;
-    }
-    .content {
-      flex: 5 0px;
-      order: 2;
-    }
-    .footer {
-      order: 3;
-    }
-  }
-
-
-  /*Properties for the Parent (flex container)*/
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: stretch;
-  background-color: orange; }
-
-.container-shorthand {
-  display: flex;
-  flex-flow: row wrap; }
-
-/*Properties for the Children (flex items)*/
-.item {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  background-color: white;
-  padding: 5px;
-  width: 200px;
-  line-height: 150px;
-  font-weight: bold;
-  text-align: center;
-  margin: 10px; }
-
-.item-shorthand {
-  flex: 0 1 auto; }
-
-p {
-  color: red; }
-  .test p {
-    color: orange; }
-
-.div {
-  border: 1px solid orange; }
+label::after {
+  content: ":"; }
 
 .btn {
   display: inline-block;
