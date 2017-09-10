@@ -1,8 +1,6 @@
 header.head{
-    background-color: rgb(250, 160, 160);
-    background-color: #0DDDAC;
+    background-color: #1de9b6;
     height: 52px;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
     position: relative;
     z-index: 9;
@@ -72,11 +70,15 @@ header.head .head__system .system__name{
 }
 header.head .head__logout{
     position: absolute;
-    top: 10px;
     right: 0px;
-    width: 100px;
+    width: 70px;
     color: rgb(255, 255, 255);
 }
+
+header.head .head__logout a {
+
+}
+
 .head__menu ul li:before , .head .head__logout:before{
     display: block;
     font-size: 1.8em;

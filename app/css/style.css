@@ -140,10 +140,8 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 header.head {
-  background-color: #faa0a0;
-  background-color: #0DDDAC;
+  background-color: #1de9b6;
   height: 52px;
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
   position: relative;
   z-index: 9;
@@ -210,9 +208,8 @@ header.head .head__system .system__name {
 
 header.head .head__logout {
   position: absolute;
-  top: 10px;
   right: 0px;
-  width: 100px;
+  width: 70px;
   color: white; }
 
 .head__menu ul li:before, .head .head__logout:before {
@@ -276,7 +273,8 @@ th {
 
 div.dataTables_scrollBody {
   overflow-y: auto !important;
-  overflow-x: hidden !important; }
+  overflow-x: hidden !important;
+  height: 400px; }
 
 tr:nth-child(even) {
   background-color: #f6f6f6; }
