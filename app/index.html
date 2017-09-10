@@ -4,56 +4,187 @@
 <head>
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="rs/css/rs.font.thsarabunnew.css">
+    <link rel="stylesheet" type="text/css" href="rs/css/rs.font.icon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="rs/css/jquery/datatable/js/jquery.js"></script>
+    <script src="rs/css/jquery/datatable/js/jquery.dataTables.min.js"></script>
 </head>
 
 <body>
-    <form>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1"><label>First name</label></div>
-                <div class="col-md-2"><input type="text"></div>
-                <div class="col-md-1"><label>Last name</label></div>
-                <div class="col-md-2"><input type="text"></div>
-                <div class="col-md-1"><label>Email</label></div>
-                <div class="col-md-5"><input type="text"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-1"><label>Select</label></div>
-                <div class="col-md-3">
-                    <select>
-                        <option>test</option>
-                    </select>
+    <div class="container">
+        <header class="head">
+            <div class="head__system">
+                <div class="system__logo">
+                    <img>
                 </div>
+                <div class="system__name"><b>Test</b></div>
             </div>
-            <div class="row">
-                <div class="col-md-1"><label>Check</label></div>
-                <div class="col-md-3">
-                    <input type="checkbox"><label>Male</label><br>
-                    <input type="checkbox"><label>Female</label>
-                </div>
+            <div class="head__logout">
+                <a><i data-icon-rs="logout"></i> Log out</a>
             </div>
-            <div class="row">
-                <div class="col-md-1"><label>First name</label></div>
-                <div class="col-md-2"><input type="text"></div>
-                <div class="col-md-1"><label>Last name</label></div>
-                <div class="col-md-2"><input type="text"></div>
-                <div class="col-md-1"><label>Email</label></div>
-                <div class="col-md-5"><input type="text"></div>
+        </header>
+        <div class="table">
+            <div class="table-main">
+                <table id="tableMain" class="display tableMain" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>ชื่อผู้อัพโหลด</th>
+                            <th>ชื่อไฟล์</th>
+                            <th>เวลา</th>
+                            <th>ทั้งหมด</th>
+                            <th>ผ่าน</th>
+                            <th>ไม่ผ่าน</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>test test test test test test test test test test</td>
+                            <td>test test test test test test test test test test</td>
+                            <td>10/10/2017</td>
+                            <td>999999</td>
+                            <td>999999</td>
+                            <td>999999</td>
+                        </tr>
+                        <tr>
+                            <td>test test test test test test test test test test</td>
+                            <td>test test test test test test test test test test</td>
+                            <td>10/10/2017</td>
+                            <td>999999</td>
+                            <td>999999</td>
+                            <td>999999</td>
+                        </tr>
+                        <tr>
+                            <td>test test test test test test test test test test</td>
+                            <td>test test test test test test test test test test</td>
+                            <td>10/10/2017</td>
+                            <td>999999</td>
+                            <td>999999</td>
+                            <td>999999</td>
+                        </tr>
+                        <tr>
+                            <td>test test test test test test test test test test</td>
+                            <td>test test test test test test test test test test</td>
+                            <td>10/10/2017</td>
+                            <td>999999</td>
+                            <td>999999</td>
+                            <td>999999</td>
+                        </tr>
+                        <tr>
+                            <td>test test test test test test test test test test</td>
+                            <td>test test test test test test test test test test</td>
+                            <td>11/10/2015</td>
+                            <td>999999</td>
+                            <td>999999</td>
+                            <td>999999</td>
+                        </tr>
+                        <tr>
+                            <td>test test test test test test test test test test</td>
+                            <td>test test test test test test test test test test</td>
+                            <td>10/10/2015</td>
+                            <td>999999</td>
+                            <td>999999</td>
+                            <td>999999</td>
+                        </tr>
+                        <tr>
+                            <td>test test test test test tes</td>
+                            <td>test test test test test test test test test test</td>
+                            <td>10/10/2017</td>
+                            <td>999999</td>
+                            <td>999999</td>
+                            <td>999999</td>
+                        </tr>
+                        <tr>
+                            <td>test test test test test test test test test test</td>
+                            <td>test test test test test test test test test test</td>
+                            <td>10/10/2017</td>
+                            <td>999999</td>
+                            <td>999999</td>
+                            <td>999999</td>
+                        </tr>
+                        <tr>
+                            <td>test test test test test test test test test test</td>
+                            <td>test test test test test test test test test test</td>
+                            <td>10/10/2017</td>
+                            <td>999999</td>
+                            <td>999999</td>
+                            <td>999999</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-sub">
+                <table class="display tableSub" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Ref.</th>
+                            <th>Error</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>999999</td>
+                            <td>error 1</td>
+                        </tr>
+                        <tr>
+                            <td>999999</td>
+                            <td>error 1</td>
+                        </tr>
+                        <tr>
+                            <td>999999</td>
+                            <td>error 1</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
+        <div class="button">
+            <button><i data-icon-rs="upload"></i> Upload</button>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.tableMain').DataTable({
+                scrollY: '400px',
+                scrollCollapse: true,
+                paging: false,
+                searching: false,
+                bInfo: false,
+                bSort: false,
+                columnDefs: [{
+                        width: 200,
+                        targets: 0
+                    },
+                    {
+                        width: 200,
+                        targets: 1
+                    },
+                    {
+                        width: 100,
+                        targets: 2
+                    }
+                ],
+                fixedColumns: true
+            });
+        });
 
-        <p>test</p>
-        <p>test
-            <div class="test">test
-                <p>test</p>
-            </div>
-        </p>
-        <div class="div">
-            test
-        </div>
-    </form>
+        $(document).ready(function () {
+            $('.tableSub').DataTable({
+                scrollY: '400px',
+                scrollCollapse: true,
+                paging: false,
+                searching: false,
+                bInfo: false,
+                bSort: false,
+                columnDefs: [{
+                    width: 100,
+                    targets: 0
+                }],
+                fixedColumns: true
+            });
+        });
+    </script>
 </body>
 
 </html>

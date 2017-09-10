@@ -1,0 +1,63 @@
+.table {
+    margin: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    &::before {
+        @include clearfix();
+    }
+    &::after {
+        @include clearfix();
+    }
+}
+
+.table-main {
+    width: 900px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.table-sub {
+    width: 400px;
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color:#555;
+}
+
+
+td {
+    line-height: 20px;
+    padding: 5px;
+}
+
+th {
+    color: #333;
+    background-color: #ededed;
+    padding: 20px 10px;
+}
+
+div.dataTables_scrollBody {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+table.dataTable thead th {
+    border-bottom: 0;
+}
+
+table.dataTable tfoot th {
+    border-top: 0;
+}

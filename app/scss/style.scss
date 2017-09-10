@@ -1,7 +1,5 @@
-@import "variables";
-@import "functions";
+@import "reset";
 @import "mixins";
-
-@import "normalize";
-@import "form";
-@import "buttons";
+@import "header";
+@import "content";
+@import "tables";
