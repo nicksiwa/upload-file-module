@@ -29,6 +29,7 @@ header.head .head__system .system__logo img{
 header.head .head__system .system__name{
     padding: 10px;
     line-height: 35px;
+    font-family: 'THNiramitAS';
     font-size: 26px;
     color: #20283C;
     color: #fff;
@@ -46,17 +47,17 @@ header.head .head__system .system__name{
     cursor: pointer;
     font-size: 0.75em;
     color: rgb(255, 255, 255);
-    box-shadow: rgba(255, 255, 255, 0.2)  1px 0px 0px 0px inset;
+    @include prefix(box-shadow,"rgba(255, 255, 255, 0.2)  1px 0px 0px 0px inset;");
     min-width: 50px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: rgba(0, 0, 0, 0.36);
-    transition:color linear .3s;
+    @include prefix(transition,"color linear .3s");
     cursor: pointer;
 }
 .head__menu ul li:hover , header.head .head__logout:hover{
     color: rgba(0, 0, 0, 0.65);
-    transition:color linear .3s;
+    @include prefix(transition,"color linear .3s");
 }
 .head__menu ul li{
     float: left;
@@ -66,17 +67,15 @@ header.head .head__system .system__name{
     border-top: 0;
 }
 .head__menu ul li:last-of-type{
-    box-shadow: rgba(255, 255, 255, 0.2) 1px 0px 0px 0px inset , rgba(255, 255, 255, 0.2) -1px 0px 0px 0px inset;
+    @include prefix(box-shadow,"rgba(255, 255, 255, 0.2) 1px 0px 0px 0px inset , rgba(255, 255, 255, 0.2) -1px 0px 0px 0px inset");
 }
 header.head .head__logout{
+    box-sizing: border-box;
     position: absolute;
     right: 0px;
-    width: 70px;
-    color: rgb(255, 255, 255);
-}
-
-header.head .head__logout a {
-
+    width: 50px;
+    border-left: 1px solid rgba(0,0,0,0.25);
+    color: darken(#1de9b6,20%);
 }
 
 .head__menu ul li:before , .head .head__logout:before{

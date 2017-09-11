@@ -1,8 +1,7 @@
 .table {
-    margin: 20px;
-    overflow-x: auto;
-    overflow-y: hidden;
     white-space: nowrap;
+    width: 100vw;
+    padding: 10px;
     &::before {
         @include clearfix();
     }
@@ -12,27 +11,26 @@
 }
 
 .table-main {
-    width: 900px;
+    width: 71vw;
     display: inline-block;
     vertical-align: top;
 }
 
 .table-sub {
-    width: 400px;
-    display: inline-block;
     margin-left: 20px;
+    width: 26vw;
+    display: inline-block;
     vertical-align: top;
 }
 
 table {
-    width: 100%;
+    width: 100% !important;
     border-collapse: collapse;
     table-layout: fixed;
     white-space: pre-wrap;
     word-wrap: break-word;
-    color:#555;
+    color: #555;
 }
-
 
 td {
     line-height: 20px;
@@ -47,8 +45,9 @@ th {
 
 div.dataTables_scrollBody {
     overflow-y: auto !important;
-    overflow-x: hidden !important;
-    height: 400px;
+    overflow-x: auto !important;
+    width: 100%;
+    height: calc(100vh - #{$topbar-height} - #{$button-height} - #{$thead-height} - #{$table-padding} - #{$any-white-space});
 }
 
 tr:nth-child(even) {

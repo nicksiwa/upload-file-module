@@ -4,30 +4,29 @@
 <head>
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="rs/css/rs.font.thsarabunnew.css">
-    <link rel="stylesheet" type="text/css" href="rs/css/rs.font.icon.css">
+    <link rel="stylesheet" type="text/css" href="rs/rs.font.thsarabunnew.css">
+    <link rel="stylesheet" type="text/css" href="rs/rs.font.icon.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="rs/css/jquery/datatable/js/jquery.js"></script>
-    <script src="rs/css/jquery/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="rs/jquery/datatable/js/jquery.js"></script>
+    <script src="rs/jquery/datatable/js/jquery.dataTables.min.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <header class="head">
-            <div class="head__system">
+        <header class="container__head head float mgd">
+            <div class="head__system float" style="cursor:pointer">
                 <div class="system__logo">
-                    <img>
+
                 </div>
-                <div class="system__name"><b>Test</b></div>
+                <div class="system__name">ระบบ</div>
             </div>
-            <div class="head__logout">
-                <a><i data-icon-rs="logout"></i> Log out</a>
-            </div>
+
+            <div data-icon-rs="logout" data-btn="logout" class="head__logout" >Logout</div>
         </header>
         <div class="table">
             <div class="table-main">
-                <table id="tableMain" class="display tableMain" cellspacing="0" width="100%">
+                <table id="tableMain" class="display tableMain">
                     <thead>
                         <tr>
                             <th>ชื่อผู้อัพโหลด</th>
@@ -111,11 +110,19 @@
                             <td>999999</td>
                             <td>999999</td>
                         </tr>
+                        <tr>
+                            <td>test test test test test test test test test test</td>
+                            <td>test test test test test test test test test test</td>
+                            <td>10/10/2017</td>
+                            <td>999999</td>
+                            <td>999999</td>
+                            <td>999999</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
             <div class="table-sub">
-                <table class="display tableSub" cellspacing="0" width="100%">
+                <table class="display tableSub">
                     <thead>
                         <tr>
                             <th>Ref.</th>
@@ -135,18 +142,59 @@
                             <td>999999</td>
                             <td>error test test test test test test test test test test</td>
                         </tr>
+                        <tr>
+                            <td>999999</td>
+                            <td>error test test test test test test test test test test</td>
+                        </tr>
+                        <tr>
+                            <td>999999</td>
+                            <td>error test test test test test test test test test test</td>
+                        </tr>
+                        <tr>
+                            <td>999999</td>
+                            <td>error test test test test test test test test test test</td>
+                        </tr>
+                        <tr>
+                            <td>999999</td>
+                            <td>error test test test test test test test test test test</td>
+                        </tr>
+                        <tr>
+                            <td>999999</td>
+                            <td>error test test test test test test test test test test</td>
+                        </tr>
+                        <tr>
+                            <td>999999</td>
+                            <td>error test test test test test test test test test test</td>
+                        </tr>
+                        <tr>
+                            <td>999999</td>
+                            <td>error test test test test test test test test test test test test test test test test test test test test</td>
+                        </tr>
+                        <tr>
+                            <td>999999</td>
+                            <td>error test test test test test test test test test test test test test test test test test test test test</td>
+                        </tr>
+                        <tr>
+                            <td>999999</td>
+                            <td>error test test test test test test test test test test test test test test test test test test test test</td>
+                        </tr>
+                        <tr>
+                            <td>999999</td>
+                            <td>error test test test test test test test test test test test test test test test test test test test test</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
         </div>
         <div class="button">
-            <button><i data-icon-rs="upload"></i> Upload</button>
+            <button type="submit" class="btn" data-icon-rs="upload"> Upload</button>
         </div>
     </div>
     <script>
         $(document).ready(function () {
             $('.tableMain').DataTable({
-                scrollY: '400px',
+                scrollY: '100%',
+                scrollX: true,
                 scrollCollapse: true,
                 paging: false,
                 searching: false,
@@ -163,7 +211,19 @@
                     {
                         width: 100,
                         targets: 2
-                    }
+                    },
+                    {
+                        width: 50,
+                        targets: 3
+                    },
+                    {
+                        width: 50,
+                        targets: 4
+                    },
+                    {
+                        width: 50,
+                        targets: 5
+                    },
                 ],
                 fixedColumns: true
             });
@@ -171,16 +231,22 @@
 
         $(document).ready(function () {
             $('.tableSub').DataTable({
-                scrollY: '400px',
+                scrollY: '100%',
+                scrollX: true,
                 scrollCollapse: true,
                 paging: false,
                 searching: false,
                 bInfo: false,
                 bSort: false,
                 columnDefs: [{
-                    width: 100,
-                    targets: 0
-                }],
+                        width: 50,
+                        targets: 0
+                    },
+                    {
+                        width: 300,
+                        targets: 1
+                    }
+                ],
                 fixedColumns: true
             });
         });
