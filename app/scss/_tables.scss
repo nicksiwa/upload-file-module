@@ -1,7 +1,7 @@
 .table {
     white-space: nowrap;
     width: 100vw;
-    padding: 10px;
+    padding: 10px 10px 0 10px;
     &::before {
         @include clearfix();
     }
@@ -47,7 +47,7 @@ div.dataTables_scrollBody {
     overflow-y: auto !important;
     overflow-x: auto !important;
     width: 100%;
-    height: calc(100vh - #{$topbar-height} - #{$button-height} - #{$thead-height} - #{$table-padding} - #{$button-margin} - #{$any-white-space});
+    height: calc(100vh - #{$topbar-height} - #{$button-height} - #{$thead-height} - #{$button-margin} - #{$any-white-space});
 }
 
 tr:nth-child(even) {

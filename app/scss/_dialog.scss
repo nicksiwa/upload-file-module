@@ -3,8 +3,14 @@
     font-size: .8em;
     line-height: 17px;
 
+    &-header {
+        border: none;
+        border-bottom: 1px solid #dddddd;
+    }
+
     &-content {
         border: none;
+        word-break: break-all;
     }
     
     button {
@@ -24,6 +30,10 @@
     @include prefix (border-bottom-right-radius,3px);
 
     .ui-dialog-titlebar {
+        padding: 10px;
+    }
+
+    .ui-dialog-content {
         padding: 10px;
     }
     
