@@ -247,7 +247,7 @@ body {
   overflow-y: auto; }
 
 .button {
-  margin: 5px;
+  margin: 10px;
   text-align: right; }
 
 button.btn {
@@ -325,7 +325,7 @@ div.dataTables_scrollBody {
   overflow-y: auto !important;
   overflow-x: auto !important;
   width: 100%;
-  height: calc(100vh - 54px - 36px - 56px - 10px - 20px); }
+  height: calc(100vh - 54px - 36px - 56px - 10px - 10px - 20px); }
 
 tr:nth-child(even) {
   background-color: #f6f6f6; }
@@ -338,7 +338,8 @@ table.dataTable tfoot th {
 
 .ui-widget {
   font-family: 'THSarabunNew';
-  font-size: .8em; }
+  font-size: .8em;
+  line-height: 17px; }
   .ui-widget-content {
     border: none; }
   .ui-widget button {
