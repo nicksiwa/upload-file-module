@@ -6,10 +6,18 @@ $(function () {
             Ok: function () {
                 $(this).dialog("close");
             }
+        },
+        show: {
+            effect: "fade",
+            duration: 200
+        },
+        hide: {
+            effect: "fade",
+            duration: 200
         }
     });
 
-    $( "#upload" ).on( "click", function() {
-        $( "#dialog-message" ).dialog( "open" );
-      });
+    $("#upload").on("click", function () {
+        $("#dialog-message").dialog("open");
+    });
 });
