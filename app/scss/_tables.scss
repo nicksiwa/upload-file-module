@@ -11,14 +11,14 @@
 }
 
 .table-main {
-    width: 71vw;
+    width: 70vw;
     display: inline-block;
     vertical-align: top;
+    margin-right: 10px;
 }
 
 .table-sub {
-    margin-left: 20px;
-    width: 26vw;
+    width: calc(30vw - 35px);
     display: inline-block;
     vertical-align: top;
 }

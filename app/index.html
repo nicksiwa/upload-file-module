@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="rs/rs.font.thsarabunnew.css">
     <link rel="stylesheet" type="text/css" href="rs/rs.font.icon.css">
+    <link rel="stylesheet" type="text/css" href="rs/jquery/jquery-ui.css">
+    
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="rs/jquery/datatable/js/jquery.js"></script>
+    <script src="rs/jquery/external/jquery/jquery.js"></script>
+    <script src="rs/jquery/jquery-ui.js"></script>
+
     <script src="rs/jquery/datatable/js/jquery.dataTables.min.js"></script>
 </head>
 
@@ -19,10 +23,10 @@
                 <div class="system__logo">
 
                 </div>
-                <div class="system__name">ระบบ</div>
+                <div class="system__name">ระบบ.........</div>
             </div>
 
-            <div data-icon-rs="logout" data-btn="logout" class="head__logout" >Logout</div>
+            <div data-icon-rs="logout" data-btn="logout" class="head__logout">Logout</div>
         </header>
         <div class="table">
             <div class="table-main">
@@ -166,22 +170,6 @@
                             <td>999999</td>
                             <td>error test test test test test test test test test test</td>
                         </tr>
-                        <tr>
-                            <td>999999</td>
-                            <td>error test test test test test test test test test test test test test test test test test test test test</td>
-                        </tr>
-                        <tr>
-                            <td>999999</td>
-                            <td>error test test test test test test test test test test test test test test test test test test test test</td>
-                        </tr>
-                        <tr>
-                            <td>999999</td>
-                            <td>error test test test test test test test test test test test test test test test test test test test test</td>
-                        </tr>
-                        <tr>
-                            <td>999999</td>
-                            <td>error test test test test test test test test test test test test test test test test test test test test</td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -189,68 +177,14 @@
         <div class="button">
             <button type="submit" class="btn" data-icon-rs="upload"> Upload</button>
         </div>
+        <div id="dialog-message" title="Upload complete">
+            <p>
+                Your files have uploaded successfully.
+            </p>
+        </div>
     </div>
-    <script>
-        $(document).ready(function () {
-            $('.tableMain').DataTable({
-                scrollY: '100%',
-                scrollX: true,
-                scrollCollapse: true,
-                paging: false,
-                searching: false,
-                bInfo: false,
-                bSort: false,
-                columnDefs: [{
-                        width: 200,
-                        targets: 0
-                    },
-                    {
-                        width: 200,
-                        targets: 1
-                    },
-                    {
-                        width: 100,
-                        targets: 2
-                    },
-                    {
-                        width: 50,
-                        targets: 3
-                    },
-                    {
-                        width: 50,
-                        targets: 4
-                    },
-                    {
-                        width: 50,
-                        targets: 5
-                    },
-                ],
-                fixedColumns: true
-            });
-        });
-
-        $(document).ready(function () {
-            $('.tableSub').DataTable({
-                scrollY: '100%',
-                scrollX: true,
-                scrollCollapse: true,
-                paging: false,
-                searching: false,
-                bInfo: false,
-                bSort: false,
-                columnDefs: [{
-                        width: 50,
-                        targets: 0
-                    },
-                    {
-                        width: 300,
-                        targets: 1
-                    }
-                ],
-                fixedColumns: true
-            });
-        });
-    </script>
+    <script src="js/dialog.js"></script>
+    <script src="js/datatable.js"></script>
 </body>
 
 </html>

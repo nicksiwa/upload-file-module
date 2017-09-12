@@ -1,0 +1,59 @@
+$(document).ready(function () {
+    $('.tableMain').DataTable({
+        scrollY: '100%',
+        scrollX: true,
+        scrollCollapse: true,
+        paging: false,
+        searching: false,
+        bInfo: false,
+        bSort: false,
+        columnDefs: [{
+                width: 200,
+                targets: 0
+            },
+            {
+                width: 200,
+                targets: 1
+            },
+            {
+                width: 100,
+                targets: 2
+            },
+            {
+                width: 50,
+                targets: 3
+            },
+            {
+                width: 50,
+                targets: 4
+            },
+            {
+                width: 50,
+                targets: 5
+            },
+        ],
+        fixedColumns: true
+    });
+});
+
+$(document).ready(function () {
+    $('.tableSub').DataTable({
+        scrollY: '100%',
+        scrollX: true,
+        scrollCollapse: true,
+        paging: false,
+        searching: false,
+        bInfo: false,
+        bSort: false,
+        columnDefs: [{
+                width: 50,
+                targets: 0
+            },
+            {
+                width: 300,
+                targets: 1
+            }
+        ],
+        fixedColumns: true
+    });
+});
