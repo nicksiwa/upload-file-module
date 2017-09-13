@@ -1,5 +1,5 @@
 header.head {
-    background-color: #4ECB8E;
+    background-color: $header-color;
     height: 52px;
     z-index: 9;
     padding-right: 50px;
@@ -28,9 +28,8 @@ header.head {
         .system__name {
             padding: 10px;
             line-height: 35px;
-            font-family: 'THNiramitAS';
+            font-family: $header-title-font;
             font-size: 26px;
-            color: #20283C;
             color: #fff;
             /* text-shadow: 1px 0px 0px #768EBF; */
             -webkit-font-smoothing: antialiased;
@@ -54,7 +53,7 @@ header.head {
         border-left: 1px solid rgba(0, 0, 0, 0.25);
         text-align: center;
         font-size: 0.75em;
-        color: darken(#4ECB8E, 20%);
+        color: darken($header-color, 20%);
         box-sizing: border-box;
         position: absolute;
         cursor: pointer;
