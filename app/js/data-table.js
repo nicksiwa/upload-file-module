@@ -20,15 +20,15 @@ $(document).ready(function () {
                 targets: 2
             },
             {
-                width: 50,
+                width: 80,
                 targets: 3
             },
             {
-                width: 50,
+                width: 80,
                 targets: 4
             },
             {
-                width: 50,
+                width: 80,
                 targets: 5
             },
         ],
@@ -46,7 +46,7 @@ $(document).ready(function () {
         bInfo: false,
         bSort: false,
         columnDefs: [{
-                width: 50,
+                width: 80,
                 targets: 0
             },
             {

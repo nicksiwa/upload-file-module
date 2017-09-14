@@ -24,11 +24,19 @@
 }
 
 table {
-    border-collapse: collapse;
     table-layout: fixed;
     white-space: pre-wrap;
     word-wrap: break-word;
     color: #555;
+}
+
+tr {
+    &:nth-child(even) {
+        background-color: #f6f6f6;
+    }
+    &:first-child td {
+        border-top: none;
+    }
 }
 
 td {
@@ -37,18 +45,14 @@ td {
 }
 
 th {
+    box-sizing: border-box;
     color: #333;
     background-color: $table-header-color;
     padding: 20px 10px;
 }
 
-
 div.dataTables_scrollBody {
     overflow-y: auto !important;
     overflow-x: auto !important;
     height: calc(100vh - #{$topbar-height} - #{$button-height} - #{$thead-height} - #{$button-margin} - #{$any-white-space});
-}
-
-tr:nth-child(even) {
-    background-color: #f6f6f6;
 }
