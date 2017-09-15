@@ -17,6 +17,7 @@ $(function () {
         }
     });
 
+    /*event*/
     $("#upload").on("click", function () {
         $("#dialog-message").dialog("open");
     });

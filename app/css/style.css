@@ -171,13 +171,13 @@ header.head {
   header.head .head__logout {
     -webkit-box-shadow: rgba(255, 255, 255, 0.2)  1px 0px 0px 0px inset;;
     -moz-box-shadow: rgba(255, 255, 255, 0.2)  1px 0px 0px 0px inset;;
-    -o-box-shadow: rgba(255, 255, 255, 0.2)  1px 0px 0px 0px inset;;
     -ms-box-shadow: rgba(255, 255, 255, 0.2)  1px 0px 0px 0px inset;;
+    -o-box-shadow: rgba(255, 255, 255, 0.2)  1px 0px 0px 0px inset;;
     box-shadow: rgba(255, 255, 255, 0.2)  1px 0px 0px 0px inset;;
     -webkit-transition: color linear .3s;
     -moz-transition: color linear .3s;
-    -o-transition: color linear .3s;
     -ms-transition: color linear .3s;
+    -o-transition: color linear .3s;
     transition: color linear .3s;
     height: 100%;
     width: 50px;
@@ -197,8 +197,8 @@ header.head {
     header.head .head__logout:hover {
       -webkit-transition: color linear .3s;
       -moz-transition: color linear .3s;
-      -o-transition: color linear .3s;
       -ms-transition: color linear .3s;
+      -o-transition: color linear .3s;
       transition: color linear .3s;
       color: rgba(0, 0, 0, 0.65); }
     header.head .head__logout::before {
@@ -223,18 +223,18 @@ body {
 button.btn {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
-  -o-border-radius: 2px;
   -ms-border-radius: 2px;
+  -o-border-radius: 2px;
   border-radius: 2px;
   -webkit-box-shadow: 0px 1px 0px 0px #D6D6D6, inset 0px 1px 0px 0px rgba(255, 255, 255, 0.69), inset 0px -1px 0px 0px rgba(255, 255, 255, 0.69);
   -moz-box-shadow: 0px 1px 0px 0px #D6D6D6, inset 0px 1px 0px 0px rgba(255, 255, 255, 0.69), inset 0px -1px 0px 0px rgba(255, 255, 255, 0.69);
-  -o-box-shadow: 0px 1px 0px 0px #D6D6D6, inset 0px 1px 0px 0px rgba(255, 255, 255, 0.69), inset 0px -1px 0px 0px rgba(255, 255, 255, 0.69);
   -ms-box-shadow: 0px 1px 0px 0px #D6D6D6, inset 0px 1px 0px 0px rgba(255, 255, 255, 0.69), inset 0px -1px 0px 0px rgba(255, 255, 255, 0.69);
+  -o-box-shadow: 0px 1px 0px 0px #D6D6D6, inset 0px 1px 0px 0px rgba(255, 255, 255, 0.69), inset 0px -1px 0px 0px rgba(255, 255, 255, 0.69);
   box-shadow: 0px 1px 0px 0px #D6D6D6, inset 0px 1px 0px 0px rgba(255, 255, 255, 0.69), inset 0px -1px 0px 0px rgba(255, 255, 255, 0.69);
   -webkit-transition: box-shadow linear .3s, border linear .3s;
   -moz-transition: box-shadow linear .3s, border linear .3s;
-  -o-transition: box-shadow linear .3s, border linear .3s;
   -ms-transition: box-shadow linear .3s, border linear .3s;
+  -o-transition: box-shadow linear .3s, border linear .3s;
   transition: box-shadow linear .3s, border linear .3s;
   border: 1px solid #cacaca;
   background-color: #ececec;
@@ -245,8 +245,8 @@ button.btn {
   button.btn:active {
     -webkit-box-shadow: 0px -1px 0px 0px #fff, 0px 1px 0px 0px #fff, inset 0px 1px 0px 0px #D6D6D6;
     -moz-box-shadow: 0px -1px 0px 0px #fff, 0px 1px 0px 0px #fff, inset 0px 1px 0px 0px #D6D6D6;
-    -o-box-shadow: 0px -1px 0px 0px #fff, 0px 1px 0px 0px #fff, inset 0px 1px 0px 0px #D6D6D6;
     -ms-box-shadow: 0px -1px 0px 0px #fff, 0px 1px 0px 0px #fff, inset 0px 1px 0px 0px #D6D6D6;
+    -o-box-shadow: 0px -1px 0px 0px #fff, 0px 1px 0px 0px #fff, inset 0px 1px 0px 0px #D6D6D6;
     box-shadow: 0px -1px 0px 0px #fff, 0px 1px 0px 0px #fff, inset 0px 1px 0px 0px #D6D6D6;
     border-top: 1px solid #b1b1b1; }
 
@@ -299,7 +299,7 @@ th {
 div.dataTables_scrollBody {
   overflow-y: auto !important;
   overflow-x: auto !important;
-  height: calc(100vh - 54px - 36px - 56px - 10px - 20px); }
+  height: calc(100vh - (54px + 36px + 56px + 10px + 20px)); }
 
 .ui-widget {
   font-family: "THSarabunNew";
@@ -319,25 +319,25 @@ div.dataTables_scrollBody {
 .ui-corner-all {
   -webkit-border-bottom-left-radius: 0;
   -moz-border-bottom-left-radius: 0;
-  -o-border-bottom-left-radius: 0;
   -ms-border-bottom-left-radius: 0;
+  -o-border-bottom-left-radius: 0;
   border-bottom-left-radius: 0;
   -webkit-border-bottom-right-radius: 0;
   -moz-border-bottom-right-radius: 0;
-  -o-border-bottom-right-radius: 0;
   -ms-border-bottom-right-radius: 0;
+  -o-border-bottom-right-radius: 0;
   border-bottom-right-radius: 0; }
 
 .ui-dialog {
   -webkit-border-bottom-left-radius: 3px;
   -moz-border-bottom-left-radius: 3px;
-  -o-border-bottom-left-radius: 3px;
   -ms-border-bottom-left-radius: 3px;
+  -o-border-bottom-left-radius: 3px;
   border-bottom-left-radius: 3px;
   -webkit-border-bottom-right-radius: 3px;
   -moz-border-bottom-right-radius: 3px;
-  -o-border-bottom-right-radius: 3px;
   -ms-border-bottom-right-radius: 3px;
+  -o-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
   padding: 0; }
   .ui-dialog .ui-dialog-titlebar {
@@ -347,13 +347,13 @@ div.dataTables_scrollBody {
   .ui-dialog .ui-dialog-buttonpane {
     -webkit-border-bottom-left-radius: 3px;
     -moz-border-bottom-left-radius: 3px;
-    -o-border-bottom-left-radius: 3px;
     -ms-border-bottom-left-radius: 3px;
+    -o-border-bottom-left-radius: 3px;
     border-bottom-left-radius: 3px;
     -webkit-border-bottom-right-radius: 3px;
     -moz-border-bottom-right-radius: 3px;
-    -o-border-bottom-right-radius: 3px;
     -ms-border-bottom-right-radius: 3px;
+    -o-border-bottom-right-radius: 3px;
     border-bottom-right-radius: 3px;
     padding: 0;
     margin: 0; }
@@ -363,18 +363,18 @@ div.dataTables_scrollBody {
 .ui-button {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
-  -o-border-radius: 2px;
   -ms-border-radius: 2px;
+  -o-border-radius: 2px;
   border-radius: 2px;
   -webkit-box-shadow: 0px 1px 0px 0px #D6D6D6, inset 0px 1px 0px 0px rgba(255, 255, 255, 0.69), inset 0px -1px 0px 0px rgba(255, 255, 255, 0.69);
   -moz-box-shadow: 0px 1px 0px 0px #D6D6D6, inset 0px 1px 0px 0px rgba(255, 255, 255, 0.69), inset 0px -1px 0px 0px rgba(255, 255, 255, 0.69);
-  -o-box-shadow: 0px 1px 0px 0px #D6D6D6, inset 0px 1px 0px 0px rgba(255, 255, 255, 0.69), inset 0px -1px 0px 0px rgba(255, 255, 255, 0.69);
   -ms-box-shadow: 0px 1px 0px 0px #D6D6D6, inset 0px 1px 0px 0px rgba(255, 255, 255, 0.69), inset 0px -1px 0px 0px rgba(255, 255, 255, 0.69);
+  -o-box-shadow: 0px 1px 0px 0px #D6D6D6, inset 0px 1px 0px 0px rgba(255, 255, 255, 0.69), inset 0px -1px 0px 0px rgba(255, 255, 255, 0.69);
   box-shadow: 0px 1px 0px 0px #D6D6D6, inset 0px 1px 0px 0px rgba(255, 255, 255, 0.69), inset 0px -1px 0px 0px rgba(255, 255, 255, 0.69);
   -webkit-transition: box-shadow linear .3s, border linear .3s;
   -moz-transition: box-shadow linear .3s, border linear .3s;
-  -o-transition: box-shadow linear .3s, border linear .3s;
   -ms-transition: box-shadow linear .3s, border linear .3s;
+  -o-transition: box-shadow linear .3s, border linear .3s;
   transition: box-shadow linear .3s, border linear .3s;
   padding: 5px 15px 5px 15px;
   border: 1px solid #cacaca;
@@ -384,8 +384,8 @@ div.dataTables_scrollBody {
   .ui-button:active {
     -webkit-box-shadow: 0px -1px 0px 0px #fff, 0px 1px 0px 0px #fff, inset 0px 1px 0px 0px #D6D6D6;
     -moz-box-shadow: 0px -1px 0px 0px #fff, 0px 1px 0px 0px #fff, inset 0px 1px 0px 0px #D6D6D6;
-    -o-box-shadow: 0px -1px 0px 0px #fff, 0px 1px 0px 0px #fff, inset 0px 1px 0px 0px #D6D6D6;
     -ms-box-shadow: 0px -1px 0px 0px #fff, 0px 1px 0px 0px #fff, inset 0px 1px 0px 0px #D6D6D6;
+    -o-box-shadow: 0px -1px 0px 0px #fff, 0px 1px 0px 0px #fff, inset 0px 1px 0px 0px #D6D6D6;
     box-shadow: 0px -1px 0px 0px #fff, 0px 1px 0px 0px #fff, inset 0px 1px 0px 0px #D6D6D6;
     border: 1px solid #cacaca;
     background-color: #ececec;

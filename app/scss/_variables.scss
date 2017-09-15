@@ -1,7 +1,13 @@
 $font-family: 'THSarabunNew';
 $header-title-font: 'THNiramitAS';
 
-$prefixes: ("-webkit-", "-moz-", "-o-", "-ms-", "");
+$prefixes: (
+    "-webkit-", 
+    "-moz-",
+    "-ms-",
+    "-o-", 
+    ""
+    );
 
 $topbar-height: 54px;
 $button-height: 36px;

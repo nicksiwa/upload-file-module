@@ -54,5 +54,5 @@ th {
 div.dataTables_scrollBody {
     overflow-y: auto !important;
     overflow-x: auto !important;
-    height: calc(100vh - #{$topbar-height} - #{$button-height} - #{$thead-height} - #{$button-margin} - #{$any-white-space});
+    height: calc(100vh - (#{$topbar-height} + #{$button-height} + #{$thead-height} + #{$button-margin} + #{$any-white-space}));
 }
